@@ -5,7 +5,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.rmi.ServerError;
 
-// *****############### SERVER ###############***** \\
+// *****############### SERVER (ALICI)  ###############***** \\
 
 // harflerin buyuk kucuklugune dikkat et \\
 
@@ -16,11 +16,11 @@ public class SOCKETserver {
     public static void main(String[] args) throws Exception {
 
         System.out.println("Server basladi");
-        ServerSocket sgirdi = new ServerSocket(8080 );
 
+        ServerSocket sgirdi = new ServerSocket(9999 );
         System.out.println("Server, client'i bekliyor");
-        Socket scikti  = sgirdi.accept ();
 
+        Socket scikti  = sgirdi.accept ();
         System.out.println("Client baglandi");
 
 

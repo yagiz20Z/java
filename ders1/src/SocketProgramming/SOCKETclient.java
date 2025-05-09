@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 import java.net.Socket; // bu kütüphane kullanılması lazım
 
 
-// *****############### CLİENT ###############***** \\
+// *****############### CLİENT (VERICI) ###############***** \\
 
 
 public class SOCKETclient {
@@ -13,7 +13,7 @@ public class SOCKETclient {
     {
 
     String ip = "localhost";
-    int port = 32769; // 0-65535 // ama 0-1023 arasındaki portlar sistem için özel olarak ayrılmış durumdadır // ideali porlar 1023-65535 arasındadır
+    int port = 9999; // 0-65535 // ama 0-1023 arasındaki portlar sistem için özel olarak ayrılmış durumdadır // ideali porlar 1023-65535 arasındadır
 
         Socket agirisi = new Socket (ip,port);
 

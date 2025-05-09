@@ -1,33 +1,33 @@
-package PortveIPbulmak;
+    package PortveIPbulmak;
 
-import java.net.*;
-import java.util.*;
-
-
-// *****############### Port ve Ip Bulma ###############***** \\
+    import java.net.*;
+    import java.util.*;
 
 
-public class hazırKod {
-    public static void main(String[] args) throws SocketException {
+    // *****############### Port ve Ip Bulma ###############***** \\
 
 
-        // enumeration >> enum; // NetworkInterface ifadesi sistemdeki tüm arayüzleri sırasıyla verir
+    public class hazırKod {
+        public static void main(String[] args) throws SocketException {
 
-            Enumeration<NetworkInterface> interfaces = NetworkInterface.getNetworkInterfaces();
-        while (interfaces.hasMoreElements()) {
-            NetworkInterface iface = interfaces.nextElement();
 
-            // Sanal ağları atla (örneğin loopback veya VPN)
-            if (iface.isLoopback() || !iface.isUp())
-                continue;
+            // enumeration >> enum; // NetworkInterface ifadesi sistemdeki tüm arayüzleri sırasıyla verir
 
-            System.out.println("Interface: " + iface.getDisplayName());
+                Enumeration<NetworkInterface> interfaces = NetworkInterface.getNetworkInterfaces();
+            while (interfaces.hasMoreElements()) {
+                NetworkInterface iface = interfaces.nextElement();
 
-            Enumeration<InetAddress> addresses = iface.getInetAddresses();
-            while (addresses.hasMoreElements()) {
-                InetAddress addr = addresses.nextElement();
-                System.out.println("  Address: " + addr.getHostAddress());
+                // Sanal ağları atla (örneğin loopback veya VPN)
+                if (iface.isLoopback() || !iface.isUp())
+                    continue;
+
+                System.out.println("Interface: " + iface.getDisplayName());
+
+                Enumeration<InetAddress> addresses = iface.getInetAddresses();
+                while (addresses.hasMoreElements()) {
+                    InetAddress addr = addresses.nextElement();
+                    System.out.println("  Address: " + addr.getHostAddress());
+                }
             }
         }
     }
-}
