@@ -17,12 +17,11 @@ public class SOCKETserver {
 
         System.out.println("Server basladi");
 
-        ServerSocket sgirdi = new ServerSocket(9999 );
+        ServerSocket sgirdi = new ServerSocket(15000 );
         System.out.println("Server, client'i bekliyor");
 
         Socket scikti  = sgirdi.accept ();
         System.out.println("Client baglandi");
-
 
         BufferedReader br = new BufferedReader(new InputStreamReader(scikti.getInputStream()));
         String str = br.readLine();
