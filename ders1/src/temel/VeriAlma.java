@@ -1,3 +1,5 @@
+package temel;
+
 import java.util.Scanner;
 //import java.util.*; // Tüm sınıfları ekler.
 

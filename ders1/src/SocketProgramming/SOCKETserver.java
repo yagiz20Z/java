@@ -1,8 +1,8 @@
 package SocketProgramming;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.ServerSocket;
-import java.net.Socket;
+
+import java.io.*;
+
+import java.net.*;
 import java.rmi.ServerError;
 
 // *****############### SERVER (ALICI)  ###############***** \\
@@ -17,7 +17,7 @@ public class SOCKETserver {
 
         System.out.println("Server basladi");
 
-        ServerSocket sgirdi = new ServerSocket(15000 );
+        ServerSocket sgirdi = new ServerSocket(45000 );
         System.out.println("Server, client'i bekliyor");
 
         Socket scikti  = sgirdi.accept ();
@@ -27,6 +27,20 @@ public class SOCKETserver {
         String str = br.readLine();
 
         System.out.println("Client verisi : " + str);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
 }

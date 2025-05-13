@@ -1,3 +1,5 @@
+package temel;
+
 public class ForDongu {
     public static void main(String[] args){
         int i;
