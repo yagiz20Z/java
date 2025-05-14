@@ -6,7 +6,7 @@ import java.net.*;
 public class denemeserver {
     public static void main(String[] args) {
         try {
-            ServerSocket serverSocket = new ServerSocket(1234);
+            ServerSocket serverSocket = new ServerSocket(45000);
             System.out.println("Server basladi");
             System.out.println("Server, client'i bekliyor");
 

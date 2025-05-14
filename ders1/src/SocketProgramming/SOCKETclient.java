@@ -22,6 +22,7 @@ public class SOCKETclient {
         OutputStreamWriter girdi = new OutputStreamWriter(agirisi.getOutputStream());
         PrintWriter cikti = new PrintWriter(girdi);
         girdi.write(str);
+        cikti.flush();
 
     }
 
