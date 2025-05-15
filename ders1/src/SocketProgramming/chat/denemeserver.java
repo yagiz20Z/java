@@ -1,3 +1,31 @@
+/*
+*
+*        ^
+*       /^\\
+*      /___\\         YILDIZ ROKET TAKIMI
+*     |=   =|        
+*     |     |        Olusturulma Tarihi: 2025-05-14 00:48:37
+*     |     |        Tarih             : 2025-05-15 11:15:53
+*     |     |
+*    /|##!##|\\
+*   / |##!##| \\
+*  /  |##!##|  \\
+* |  / ^ | ^ \  |                                       YILDIZDAN
+* | /  ( | )  \ |
+* |/   ( | )   \|                                                                YILDIZLARA
+*     ((   ))                                                                       
+*    ((  :  ))
+*    ((  :  ))
+*     ((   ))
+*      (( ))                     
+*       ( )
+*        .
+*      .. ..
+*    .........
+* ... ...... ....
+* ************************************************************************************
+*/
+
 package SocketProgramming.chat;
 
 import java.io.*;
@@ -15,11 +43,13 @@ public class denemeserver {
 
             BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
+
+            //*************** asıl önemli kısım ***************\\
             String line;
             while ((line = in.readLine()) != null) {
                 System.out.println("Client'tan gelen veri: " + line);
             }
-
+            //*********************************\\
             in.close();
             clientSocket.close();
             serverSocket.close();
