@@ -4,8 +4,8 @@
 *       /^\\
 *      /___\\         YILDIZ ROKET TAKIMI
 *     |=   =|        
-*     |     |        Olusturulma Tarihi: 2025-05-14 00:48:37
-*     |     |        Tarih             : 2025-05-15 11:15:53
+*     |     |        Olusturulma Tarihi     : 2025-05-14 00:48:37
+*     |     |        Son Guncellenme Tarihi : 2025-05-16 16:30:11
 *     |     |
 *    /|##!##|\\
 *   / |##!##| \\
@@ -19,10 +19,8 @@
 *     ((   ))
 *      (( ))                     
 *       ( )
-*        .
-*      .. ..
-*    .........
-* ... ...... ....
+*        
+*
 * ************************************************************************************
 */
 
@@ -33,8 +31,11 @@ import java.net.*;
 
 public class denemeserver {
     public static void main(String[] args) {
+
+        int port = 45000;
+
         try {
-            ServerSocket serverSocket = new ServerSocket(45000);
+            ServerSocket serverSocket = new ServerSocket(port);
             System.out.println("Server basladi");
             System.out.println("Server, client'i bekliyor");
 
@@ -50,10 +51,14 @@ public class denemeserver {
                 System.out.println("Client'tan gelen veri: " + line);
             }
             //*********************************\\
+
             in.close();
             clientSocket.close();
             serverSocket.close();
-        } catch (IOException e) {
+        } //try bitisi
+
+
+        catch (IOException e) {
             e.printStackTrace();
         }
     }

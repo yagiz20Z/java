@@ -4,8 +4,8 @@
 *       /^\\
 *      /___\\         YILDIZ ROKET TAKIMI
 *     |=   =|        
-*     |     |        Olusturulma Tarihi: 2025-05-08 12:16:18
-*     |     |        Tarih             : 2025-05-15 11:15:53
+*     |     |        Olusturulma Tarihi     : 2025-05-08 12:16:18
+*     |     |        Son Guncellenme Tarihi : 2025-05-16 16:30:11
 *     |     |
 *    /|##!##|\\
 *   / |##!##| \\
@@ -19,10 +19,8 @@
 *     ((   ))
 *      (( ))                     
 *       ( )
-*        .
-*      .. ..
-*    .........
-* ... ...... ....
+*        
+*
 * ************************************************************************************
 */
 
@@ -42,6 +40,7 @@ public class SOCKETserver {
 
 
     public static void main(String[] args) throws Exception {
+
 
         System.out.println("Server basladi");
 
