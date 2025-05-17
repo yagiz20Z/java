@@ -68,6 +68,7 @@ public class server {
         catch (IOException e) {
             System.err.println("Server hatası: " + e.getMessage());
         }
+
         finally {
             if (SSOKET != null) {
                 try {

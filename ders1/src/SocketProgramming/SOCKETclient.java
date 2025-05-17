@@ -41,7 +41,7 @@ public class SOCKETclient {
        // String ip = "localhost";
         int port; // 0-65535 // ama 0-1023 arasındaki portlar sistem için özel olarak ayrılmış durumdadır // ideali portlar 1023-65535 arasındadır
             port = 45000;
-        Socket agirisi = new Socket ("localhost",port);
+        Socket agirisi = new Socket ("192.168.2.112",port);
 
         String str = "Ready";
 
